@@ -188,9 +188,10 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=1440
 ML_MODEL_PATH=app/ml/model.joblib
 DATASET_PATH=app/ml/dataset.csv
-ADMIN_EMAIL=admin@example.com
-ADMIN_PASSWORD=admin123
-```
+**Default Admin Setup:**
+On first run, an admin user is auto-seeded using the `ADMIN_EMAIL` and `ADMIN_PASSWORD` values from your `.env` file. See `backend/.env.example` for the format.
+
+⚠️ **Important:** Always change the default admin password before deploying to production.
 
 Frontend (`frontend/.env`):
 ```
